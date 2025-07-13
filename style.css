@@ -1,0 +1,302 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #2c3e50; /* light gray */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+header {
+  text-align: center;
+  padding: 30px 0;
+  background: #2c3e50;
+  color: white;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+header h2, header h3 {
+  font-weight: 300;
+  margin: 4px 0;
+}
+
+nav {
+  text-align: center;
+  background: #34495e;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+section {
+  margin: 30px 0;
+  padding: 20px;
+  background: rgb(206, 208, 207);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h3 {
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 10px;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  padding: 10px;
+  border: none;
+  background: #34495e;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: #16a085;
+}
+
+#contact-links a {
+  margin-right: 15px;
+  color: #474ad9;
+  text-decoration: none;
+}
+
+#contact-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+.social-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.social-list li a {
+  color: #2c3e50;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-list li a:hover {
+  color: #1abc9c;
+}
+
+header {
+  position: relative;
+  background-image: url('header-bg.jpg'); /* or your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Header container */
+header {
+  position: relative;
+  background-image: url('header-bg.jpg'); /* Your background image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Dark overlay behind header content */
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Resume button container on top-right */
+.top-right-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+}
+
+/* Resume button styling */
+.resume-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #34495e;
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.resume-btn i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.resume-btn:hover {
+  background-color: #16a085;
+  transform: scale(1.08);
+}
+
+
+#skills {
+  background-color: rgb(206, 208, 207);
+  padding: 40px 20px;
+}
+
+#skills h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-icons i {
+  font-size: 60px;
+  transition: transform 0.3s;
+}
+
+/* Add brand colors */
+.skills-icons .fa-html5 { color: #e44d26; }
+.skills-icons .fa-css3-alt { color: #264de4; }
+.skills-icons .fa-js-square { color: #f0db4f; }
+.skills-icons .fa-github { color: #171515; }
+
+.skills-icons i:hover {
+  transform: scale(1.2);
+}
+
+header {
+  background-image: url('PortfolioBG.jpg'); 
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+header img,
+header h1,
+header h2,
+header h3 {
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+header h2,
+header h3 {
+  font-weight: 300;
+  margin: 4px 0;
+}
+
+
